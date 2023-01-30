@@ -1,0 +1,157 @@
+
+
+.logoAp{
+    filter: invert();
+}
+
+
+section.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url(../images/argentine-cordoba_841.jpg);
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+
+h1.intro{
+    padding-top: 15%;
+    font-size: x-large;
+
+}
+
+section.perfil{
+    background-image:url(../images/workspace8_generated.jpg) ;
+    height: 100vh;
+background-size: cover;
+position: relative;
+}
+
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+}
+    
+.contenedor figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 10px;
+    ;
+  
+    
+    
+}
+
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7 );
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure .capa{
+    color: #fff;
+font-weight: 400;
+margin-bottom: 120;
+transition: all 500ms ease-out;
+margin-top: 20;
+}
+
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+   margin: auto; 
+
+}
+
+section.experiencia{
+    background: url(../images/noche\ de\ oficina.jpg);
+    height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.caja{
+    margin: auto;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+
+
+.barra{
+    width: 350px;
+    height: 20px;   
+    background: black;
+    border-radius: 10px;
+    box-shadow: 20px 25px 45px rgba(0, 0, 0, 0.4);
+}
+
+.progreso{
+    width: var(--w);
+    height: 100%;   
+    background: greenyellow;
+    border-radius: 10px;
+    animation: Aumentar 5s ease;
+}
+
+@keyframes Aumentar{
+    0%{width: 0%;}
+    100%{width: var(--w);}
+}
+
+.tecnicas{
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) , url(../images/dia\ de\ oficina.jpg);
+}
+
+
+.footer{
+    text-align: center;
+background-color: black;
+color: white;
+
+}
